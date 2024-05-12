@@ -1,0 +1,155 @@
+@chasrset "UTF-08";
+
+:root { 
+    --cor1: #756596;
+    --cor2: #CDCDE0;
+    --cor3: #6A725D;
+    --cor4: #DAF2EA;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #DAF2EA; 
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+a {
+    color: #756596 ;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration:.5s;
+    text-transform: uppercase;
+}
+
+a:hover{
+    background-color: var(--cor2);
+    
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+nav > a:hover {
+    background-color: gray;
+    color: white;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+img.logo {
+    width: 120px;
+    height: 100px;
+    
+}
+
+/* Estilos para os blocos de serviço */
+.servico {
+    width: 30%; /* Defina a largura desejada para cada bloco */
+    margin: 0 1.5%; /* Margem entre os blocos */
+    float: left; /* Faz com que os blocos fiquem um ao lado do outro */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura total */
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden; /* Evita que as imagens ultrapassem os limites do bloco */
+}
+
+/* Imagens dentro dos blocos de serviço */
+.servico img {
+    width: 100%; /* A imagem ocupará toda a largura do bloco */
+    height: 150px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Redimensiona a imagem mantendo a proporção e cortando para preencher o contêiner */
+}
+
+.servico > p,h2 {
+    margin: 10px;
+}
+
+
+/*Configuração da Página BLOG*/
+article {
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.data, .tempo-leitura {
+    margin: 0;
+}
+
+.compartilhar img {
+    width: 30px;
+    height: 30px;
+}
+
+.comentarios {
+    margin-top: 50px;
+}
+
+#formulario-comentario {
+    margin-bottom: 20px;
+}
+
+#comentario {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#comentarios-anteriores {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+#comentarios-anteriores p {
+    margin-bottom: 5px;
+}
