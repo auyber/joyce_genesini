@@ -1,44 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - O Poder do Gengibre na Dieta</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Joyce Genesini Nutricionista</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
-        <h1>Blog - O Poder do Gengibre na Dieta</h1>
+        <nav>
+            <span>
+                <a class="logo" href="../index.html"><img class="logo" src="../imagens/logoo.png" alt="logo joyce genesini nutricionista"></a>
+            </span>
+            <ul class="menu">
+                <li><a class="sombra" href="../index.html">home</a></li>
+                <li><a class="sombra" href="../páginas/especialidades.html">especialidades</a></li>
+                <li><a class="sombra" href="../páginas/sobre.html">sobre Joyce</a></li>
+                <li><a class="sombra" href="../páginas/blog.html">Blog</a></li>
+                <li><a class="sombra" href="../páginas/contato.html">contato</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
-        <article>
-            <div class="info">
-                <img src="nutricionista.jpg" alt="Nutricionista">
-                <p class="data">11 de Maio de 2024</p>
-                <p class="tempo-leitura">Tempo de Leitura: 5 minutos</p>
-                <div class="compartilhar">
-                    <img src="icone-compartilhar.png" alt="Compartilhar">
-                </div>
+        <section class="titulo" data-aos="fade-down">
+            <div class="titulo2">
+                <h1>Blog da Joyce</h1>
             </div>
-            <h2>O Poder do Gengibre na Dieta</h2>
-            <p>O gengibre é um ingrediente poderoso que pode trazer diversos benefícios para a sua saúde...</p>
-            <div class="estatisticas">
-                <p>1000 visualizações</p>
-                <p>50 comentários</p>
+        </section>
+        <section class="blog-post" data-aos="fade-left">
+            <div class="blog-image">
+                <img src="../imagens/logo.jpeg" alt="#">
             </div>
-        </article>
-
-        <section class="comentarios">
-            <h2>Comentários</h2>
-            <form id="formulario-comentario">
-                <textarea id="comentario" placeholder="Deixe seu comentário"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <div id="comentarios-anteriores"></div>
+            <div class="blog-content" >
+                <h3>Alimentos para quem está com dengue</h3>
+                <h4>18/05/2024</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ut, cumque hic consectetur voluptatibus explicabo architecto! Explicabo ex accusamus id libero unde beatae minima aspernatur. Voluptates numquam labore deserunt nam!</p>
+                <a class="link" href="#">
+                    <p>Continuar leitura...</p>
+                </a>
+            </div>
+        </section>
+        <section class="blog-post" data-aos="fade-right">
+            <div class="blog-image">
+                <img src="../imagens/flor.jpg" alt="#">
+            </div>
+            <div class="blog-content">
+                <h3>Alimentos para gripe</h3>
+                <h4>18/05/2024</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ut, cumque hic consectetur voluptatibus explicabo architecto! Explicabo ex accusamus id libero unde beatae minima aspernatur. Voluptates numquam labore deserunt nam!</p>
+                <a class="link" href="#">
+                    <p>Continuar leitura...</p>
+                </a>
+            </div>
+        </section>
+        <section class="blog-post" data-aos="fade-left">
+            <div class="blog-image">
+                <img src="../imagens/grupo.png" alt="#">
+            </div>
+            <div class="blog-content">
+                <h3>Alimentos para veganos</h3>
+                <h4>18/05/2024</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ut, cumque hic consectetur voluptatibus explicabo architecto! Explicabo ex accusamus id libero unde beatae minima aspernatur. Voluptates numquam labore deserunt nam!</p>
+                <a class="link" href="#">
+                    <p>Continuar leitura...</p>
+                </a>
+            </div>
         </section>
     </main>
-
-    <script src="script.js"></script>
+    <footer>
+        © 2024 | Todos os direitos reservados | Criação de Sites by <a href="https://github.com/auyber" target="_blank">Auyber Genesini Moura</a>.
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
