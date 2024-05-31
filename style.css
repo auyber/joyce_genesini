@@ -309,6 +309,16 @@ section#img04 {
     background-position: right center;
 }
 
+section#img05 {
+    background-image: url(../imagens/enteroterapia2.jpg);
+    background-position: right center;
+}
+
+section#img06 {
+    background-image: url(../imagens/enteroterapia3.jpg);
+    background-position: right center;
+}
+
 .section-servicos {
     display: flex;
     flex-wrap: wrap;
