@@ -473,8 +473,8 @@ h2 {
     }
 
     iframe {
-        width: 70vh;
-        margin: 2em 2em;
+        width: 55vh;
+        margin: 2em;
     }
 
     .titulo {
@@ -490,12 +490,14 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
 
     .menu {
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
+        padding: 0;
     }
 
     nav {
