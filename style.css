@@ -15,8 +15,16 @@ body {
     padding: 0;
 }
 
+html {
+    min-width: 360px; /* Trava a largura mínima da tela */
+}
+
 header {
     background-color: #DAF2EA; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 .menu {
@@ -169,23 +177,22 @@ h3 {
     margin-top: 0;
     text-align: left;
     font-size: 1.5em;
-
 }
 
-.blog-content > p{
+.blog-content > p {
     line-height: 2em;
     text-align: justify;
 }
 
-.link:hover{
+.link:hover {
     text-decoration: underline;
 }
 
-.link{
+.link {
     color: blue;
 }
 
-.acesso:hover{
+.acesso:hover {
     text-decoration: underline;
 }
 
@@ -245,14 +252,13 @@ section.imag h3 {
     line-height: 2em;
     width: 60%;
     font-weight: 600;
-  
 }
 
-section.imag h2{
+section.imag h2 {
     font-size: 2.5em;
 }
 
-section.imag a{
+section.imag a {
     color: #6c4baf;
 }
 
@@ -426,7 +432,7 @@ h2 {
     font-family: "Dancing Script", cursive;
 }
 
-.s-m{
+.s-m {
     margin: auto;
     max-width: 1400px;
     width: 60%;
@@ -435,7 +441,7 @@ h2 {
     margin-bottom: 50px;
 }
 
-.s-m a{
+.s-m a {
     display: inline-flex;
     width: 50px;
     height: 50px;
@@ -449,14 +455,82 @@ h2 {
     font-size: 20px;
 }
 
-.s-m a:hover{
+.s-m a:hover {
     background: #63ceaa;
 }
 
-.s-m a i{
+.s-m a i {
     transition: 0.4s all;
 }
 
-.s-m a:hover > i{
+.s-m a:hover > i {
     transform: scale(1.6) rotate(25deg);
 }
+
+@media screen and (max-width: 768px) {
+    .section-servicos {
+        display: block;
+    }
+
+    iframe {
+        width: 70vh;
+        margin: 2em 2em;
+    }
+
+    .titulo {
+        font-size: 10px;
+    }
+
+    .titulo2 {
+        margin: 0px;
+        padding: 02px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .sobre-joyce .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-joyce .text-content, .sobre-joyce .slider-wrapper {
+        width: 100%;
+    }
+
+    .sobre-joyce .text-content {
+        order: 1;
+    }
+
+    .sobre-joyce .slider-wrapper {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .titulo3 {
+        font-size: 0.8em;
+        text-align: center;
+    
+    }
+    
+}
+
