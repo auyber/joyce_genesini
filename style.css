@@ -10,58 +10,24 @@
 }
 
 
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden; /* Evita overflow horizontal */
 }
-
-body {
-    font-family: Arial, sans-serif;
 }
 
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: transform 0.3s ease-in-out;
-}
-
-.whatsapp-button:hover {
-    transform: scale(1.1);
-}
-
-.whatsapp-button img {
-    width: 35px;
-    height: 35px;
-}
-
-header,
-nav,
-main,
-footer,
-.section-servicos,
-.servico,
-.centralizado {
+html {
+    min-width: 360px; /* Trava a largura mínima da tela */
     width: 100%;
-    max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Evita overflow horizontal */
+}
 }
 
 header {
-    background-image: linear-gradient(to right, white, #756596a9); 
+    background-image: linear-gradient(to right,white, #756596a9 ); 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,12 +79,10 @@ nav {
     justify-content: space-around;
     align-items: center;
     max-width: 1400px;
-    width: 100%;
 }
 
 main {
     margin: auto;
-    max-width: 100%;
 }
 
 h1 {
@@ -390,8 +354,6 @@ section#img06 {
     overflow: hidden;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    padding-left: 15px;
-    padding-right: 15px;
     box-shadow: 05px 05px 10px rgba(0, 0, 0, 0.219);
     transition-duration: 2s;
 }
@@ -444,7 +406,6 @@ h2 {
     max-width: 1400px;
     margin: auto;
     margin-bottom: 100px;
-    padding: 20px;
 }
 
 .sobre-joyce .content-wrapper {
@@ -515,16 +476,12 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-    .section-servicos,
-    .servico {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+    .section-servicos {
         display: block;
     }
 
     iframe {
-        width: 100%;
+        width: 55vh;
         margin: 2em;
     }
 
@@ -541,6 +498,7 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
 
     .menu {
@@ -565,8 +523,7 @@ h2 {
         align-items: center;
     }
 
-    .sobre-joyce .text-content,
-    .sobre-joyce .slider-wrapper {
+    .sobre-joyce .text-content, .sobre-joyce .slider-wrapper {
         width: 100%;
     }
 
@@ -582,5 +539,11 @@ h2 {
     .titulo3 {
         font-size: 0.8em;
         text-align: center;
+    
     }
+    
 }
+
+quero que insira o link abaixo do whats app como um botão fixo no canto direito inferior:
+
+<a href="https://wa.me/5515996149224" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
