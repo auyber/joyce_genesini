@@ -15,12 +15,39 @@ body {
     padding: 0;
 }
 
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
 html {
     min-width: 360px; /* Trava a largura mínima da tela */
 }
 
 header {
-    background-color: #DAF2EA; 
+    background-image: linear-gradient(to right,white, #756596a9 ); 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,6 +107,7 @@ main {
 
 h1 {
     text-align: center;
+    color: #756596;
 }
 
 h2 {
@@ -96,7 +124,7 @@ h3 {
 }
 
 .titulo {
-    background-color: #cdcde0d2;
+    background-color: #DAF2EA;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -536,3 +564,6 @@ h2 {
     
 }
 
+quero que insira o link abaixo do whats app como um botão fixo no canto direito inferior:
+
+<a href="https://wa.me/5515996149224" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
