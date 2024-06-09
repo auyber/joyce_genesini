@@ -9,10 +9,21 @@
     --cor4: #DAF2EA;
 }
 
-body {
-    font-family: Arial, sans-serif;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita overflow horizontal */
+}
+
+body {
+    font-family: Arial, sans-serif;
 }
 
 .whatsapp-button {
@@ -40,14 +51,22 @@ body {
     height: 35px;
 }
 
-
-
-html {
-    min-width: 360px; /* Trava a largura mínima da tela */
+header,
+nav,
+main,
+footer,
+.section-servicos,
+.servico,
+.centralizado {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
 }
 
 header {
-    background-image: linear-gradient(to right,white, #756596a9 ); 
+    background-image: linear-gradient(to right, white, #756596a9); 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,10 +118,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     max-width: 1400px;
+    width: 100%;
 }
 
 main {
     margin: auto;
+    max-width: 100%;
 }
 
 h1 {
@@ -374,6 +395,8 @@ section#img06 {
     overflow: hidden;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    padding-left: 15px;
+    padding-right: 15px;
     box-shadow: 05px 05px 10px rgba(0, 0, 0, 0.219);
     transition-duration: 2s;
 }
@@ -426,6 +449,7 @@ h2 {
     max-width: 1400px;
     margin: auto;
     margin-bottom: 100px;
+    padding: 20px;
 }
 
 .sobre-joyce .content-wrapper {
@@ -496,12 +520,16 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-    .section-servicos {
+    .section-servicos,
+    .servico {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
         display: block;
     }
 
     iframe {
-        width: 55vh;
+        width: 100%;
         margin: 2em;
     }
 
@@ -518,7 +546,6 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
     }
 
     .menu {
@@ -543,7 +570,8 @@ h2 {
         align-items: center;
     }
 
-    .sobre-joyce .text-content, .sobre-joyce .slider-wrapper {
+    .sobre-joyce .text-content,
+    .sobre-joyce .slider-wrapper {
         width: 100%;
     }
 
@@ -559,11 +587,5 @@ h2 {
     .titulo3 {
         font-size: 0.8em;
         text-align: center;
-    
     }
-    
 }
-
-quero que insira o link abaixo do whats app como um botão fixo no canto direito inferior:
-
-<a href="https://wa.me/5515996149224" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
