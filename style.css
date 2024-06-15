@@ -374,6 +374,16 @@ section#img06 {
     background-position: right center;
 }
 
+section#img07 {
+    background-image: url(imagens/auriculoterapia2.jpg);
+    background-position: right center;
+}
+
+section#img08 {
+    background-image: url(../imagens/auriculoterapia4.jpg);
+    background-position: center;
+}
+
 .section-servicos {
     display: flex;
     flex-wrap: wrap;
@@ -397,6 +407,7 @@ section#img06 {
     margin-bottom: 4rem;
     box-shadow: 05px 05px 10px rgba(0, 0, 0, 0.219);
     transition-duration: 2s;
+    max-width: 600px;
 }
 
 .servico > h2 {
