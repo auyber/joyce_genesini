@@ -33,6 +33,43 @@ header {
     padding: 1rem;
 }
 
+.whatsapp-button {
+    position: fixed;
+    bottom: 50px;  /* Adjusted to accommodate text below */
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-text {
+    position: fixed;
+    bottom: 20px;  /* Adjusted to match the bottom of the button */
+    right: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    z-index: 1000;
+}
+
 .mapa {
     color: #756596;
 }
@@ -95,6 +132,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    color: var(--cor3);
 }
 
 p {
@@ -107,7 +145,7 @@ h3 {
 }
 
 .titulo {
-    background-color: #DAF2EA;
+    background-color: #6a725d83;
     margin-top: 50px;
     margin-bottom: 50px;
 }
