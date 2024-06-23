@@ -159,6 +159,10 @@ h3 {
     line-height: 1.8em;
 }
 
+.titulo2 > p {
+    color: white;
+}
+
 .titulo2 {
     transform: translateY(50px);
     filter: blur(20px);
