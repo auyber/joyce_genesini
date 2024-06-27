@@ -22,7 +22,7 @@ Site criado para a Nutricionista Joyce Genesini, possuindo várias páginas most
 
 ## Tecnologias utilizadas 
 <div align="center"> 
-<img align="left" alt="NodeJs" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />">
+<img align="left" alt="NodeJs" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
 <img align="left" alt="NodeJs" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
 <img align="left" alt="NodeJs" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
 
