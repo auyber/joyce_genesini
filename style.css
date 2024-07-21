@@ -126,24 +126,40 @@ main {
 }
 
 .carousel-container {
+    max-width: 1200px;
     width: 100%;
+    height: 80vh; /* Definindo uma altura fixa para o contêiner */
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: relative;
 }
 
 .carousel {
+    max-width: 1200px;
     display: flex;
     width: 100%;
+    height: 100%; /* Garantir que o carrossel ocupe toda a altura do contêiner */
+    align-items: center;
+    margin: auto;
 }
 
 .carousel-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%; /* Garantir que o contêiner das imagens ocupe toda a altura do carrossel */
 }
 
 .carousel-slides img {
     width: 100%;
-    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 1200px;
     display: block;
+    margin: auto;
+    flex-shrink: 0;
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
 }
 
 button.prev, button.next {
@@ -165,6 +181,8 @@ button.prev {
 button.next {
     right: 10px;
 }
+
+
 
 h1 {
     text-align: center;
