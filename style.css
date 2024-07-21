@@ -125,6 +125,47 @@ main {
     margin: auto;
 }
 
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slides img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
 h1 {
     text-align: center;
     color: #756596;
@@ -532,6 +573,14 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+    .carousel-slides img {
+        height: auto;
+    }
+
+    button.prev, button.next {
+        padding: 5px;
+    }
+    
     .section-servicos {
         display: block;
     }
