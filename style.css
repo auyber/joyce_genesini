@@ -9,26 +9,33 @@
     --cor4: #DAF2EA;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden; /* Evita overflow horizontal */
 }
 
-body {
-    font-family: Arial, sans-serif;
+
+html {
+    min-width: 360px; /* Trava a largura mínima da tela */
+    width: 100%;
+    overflow-x: hidden; /* Evita overflow horizontal */
+}
+
+header {
+    background-image: linear-gradient(to right,white, #756596a9 ); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 .whatsapp-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;  /* Adjusted to accommodate text below */
     right: 20px;
     width: 60px;
     height: 60px;
@@ -40,6 +47,7 @@ body {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .whatsapp-button:hover {
@@ -51,26 +59,19 @@ body {
     height: 35px;
 }
 
-header,
-nav,
-main,
-footer,
-.section-servicos,
-.servico,
-.centralizado {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    overflow-x: hidden;
+.whatsapp-text {
+    position: fixed;
+    bottom: 20px;  /* Adjusted to match the bottom of the button */
+    right: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    z-index: 1000;
 }
 
-header {
-    background-image: linear-gradient(to right, white, #756596a9); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+.mapa {
+    color: #756596;
 }
 
 .menu {
@@ -118,12 +119,10 @@ nav {
     justify-content: space-around;
     align-items: center;
     max-width: 1400px;
-    width: 100%;
 }
 
 main {
     margin: auto;
-    max-width: 100%;
 }
 
 h1 {
@@ -133,6 +132,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    color: var(--cor3);
 }
 
 p {
@@ -145,7 +145,7 @@ h3 {
 }
 
 .titulo {
-    background-color: #DAF2EA;
+    background-color: #6a725d83;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -157,6 +157,10 @@ h3 {
     padding: 20px;
     font-size: 1.8em;
     line-height: 1.8em;
+}
+
+.titulo2 > p {
+    color: white;
 }
 
 .titulo2 {
@@ -374,6 +378,16 @@ section#img06 {
     background-position: right center;
 }
 
+section#img07 {
+    background-image: url(imagens/auriculoterapia2.jpg);
+    background-position: right center;
+}
+
+section#img08 {
+    background-image: url(../imagens/auriculoterapia4.jpg);
+    background-position: center;
+}
+
 .section-servicos {
     display: flex;
     flex-wrap: wrap;
@@ -395,10 +409,9 @@ section#img06 {
     overflow: hidden;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    padding-left: 15px;
-    padding-right: 15px;
     box-shadow: 05px 05px 10px rgba(0, 0, 0, 0.219);
     transition-duration: 2s;
+    max-width: 600px;
 }
 
 .servico > h2 {
@@ -449,7 +462,6 @@ h2 {
     max-width: 1400px;
     margin: auto;
     margin-bottom: 100px;
-    padding: 20px;
 }
 
 .sobre-joyce .content-wrapper {
@@ -520,16 +532,12 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-    .section-servicos,
-    .servico {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+    .section-servicos {
         display: block;
     }
 
     iframe {
-        width: 100%;
+        width: 50vh;
         margin: 2em;
     }
 
@@ -546,6 +554,7 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
 
     .menu {
@@ -570,8 +579,7 @@ h2 {
         align-items: center;
     }
 
-    .sobre-joyce .text-content,
-    .sobre-joyce .slider-wrapper {
+    .sobre-joyce .text-content, .sobre-joyce .slider-wrapper {
         width: 100%;
     }
 
@@ -587,5 +595,7 @@ h2 {
     .titulo3 {
         font-size: 0.8em;
         text-align: center;
+    
     }
+    
 }
