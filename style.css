@@ -138,28 +138,46 @@ main {
 
 .carousel {
     max-width: 1200px;
-    display: flex;
     width: 100%;
     height: 100%; /* Garantir que o carrossel ocupe toda a altura do contêiner */
     align-items: center;
     margin: auto;
+    overflow: hidden; /* Esconder partes fora da visualização */
+    position: relative;
 }
 
 .carousel-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%;
+    width: 100%; 
     height: 100%; /* Garantir que o contêiner das imagens ocupe toda a altura do carrossel */
+}
+
+.carousel-slides .slide {
+    position: relative;
+    width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    flex-shrink: 0;
+    height: 100%;
 }
 
 .carousel-slides img {
     width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 1200px;
+    height: 100%; /* Ajuste para cobrir toda a altura do slide */
+    object-fit: contain; /* Mantém a proporção e corta a imagem conforme necessário */
     display: block;
     margin: auto;
-    flex-shrink: 0;
-    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
+}
+
+.carousel-slides .caption {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
 }
 
 button.prev, button.next {
@@ -181,7 +199,6 @@ button.prev {
 button.next {
     right: 10px;
 }
-
 
 
 h1 {
