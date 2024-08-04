@@ -522,6 +522,11 @@ section#img10 {
     background-position: center;
 }
 
+section#img11 {
+    background-image: url(../imagens/domicilio.jpg);
+    background-position: center;
+}
+
 .section-servicos {
     display: flex;
     flex-wrap: wrap;
