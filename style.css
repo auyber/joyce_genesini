@@ -125,6 +125,49 @@ main {
     margin: auto;
 }
 
+.apresentacao {
+    max-width: 1200px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta o espaçamento entre a imagem e o texto */
+    margin: auto;
+    padding: 20px; /* Adiciona espaçamento ao redor do contêiner */
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.apresentacao > img {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px; /* Adiciona espaçamento à direita da imagem */
+}
+
+.apresentacao .texto {
+    max-width: calc(100% - 40vh - 40px); /* Ajusta a largura máxima do texto com base no espaço restante */
+    flex: 1;
+}
+
+.apresentacao h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.apresentacao h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #756596d3;
+}
+
+.apresentacao p {
+    margin: 0;
+    padding: 0;
+}
+
+
 .carousel-container {
     max-width: 1200px;
     width: 100%;
@@ -173,12 +216,17 @@ main {
     bottom: 0%;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #756596;
     color: white;
     padding: 10px;
     font-size: 1.2em;
     border-radius: 5px;
 }
+
+/* --cor1: #756596;
+    --cor2: #CDCDE0;
+    --cor3: #6A725D;
+    --cor4: #DAF2EA;*/
 
 button.prev, button.next {
     position: absolute;
