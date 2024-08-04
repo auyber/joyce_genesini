@@ -512,6 +512,16 @@ section#img08 {
     background-position: center;
 }
 
+section#img09 {
+    background-image: url(../imagens/nutricao_online.jpg);
+    background-position: center;
+}
+
+section#img10 {
+    background-image: url(../imagens/atendimento.png);
+    background-position: center;
+}
+
 .section-servicos {
     display: flex;
     flex-wrap: wrap;
