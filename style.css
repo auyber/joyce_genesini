@@ -527,6 +527,11 @@ section#img11 {
     background-position: center;
 }
 
+section#img12 {
+    background-image: url(../imagens/bemestar.jpg);
+    background-position: center;
+}
+
 .section-servicos {
     display: flex;
     flex-wrap: wrap;
@@ -668,6 +673,11 @@ h2 {
 
 .s-m a:hover > i {
     transform: scale(1.6) rotate(25deg);
+}
+
+.nutri {
+    list-style-type: circle;
+    
 }
 
 @media screen and (max-width: 768px) {
