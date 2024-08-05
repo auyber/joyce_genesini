@@ -81,8 +81,8 @@ header {
 }
 
 img.logo {
-    width: 100px;
-    height: 80px;
+    width: 250px;
+    height:100px;
 }
 
 a {
@@ -125,6 +125,7 @@ main {
     margin: auto;
 }
 
+
 .apresentacao {
     max-width: 1200px;
     width: 100%;
@@ -135,6 +136,9 @@ main {
     margin: auto;
     padding: 20px; /* Adiciona espaçamento ao redor do contêiner */
     box-sizing: border-box; /* Inclui padding na largura total */
+    background-image: url(imagens/fundo.jpg);
+    background-size: cover;
+    background-position: right;
 }
 
 .apresentacao > img {
@@ -165,6 +169,7 @@ main {
 .apresentacao p {
     margin: 0;
     padding: 0;
+    font-size: large;
 }
 
 
