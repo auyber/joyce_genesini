@@ -684,6 +684,12 @@ h2 {
     
 }
 
+.nutricao {
+    list-style: disc;
+    color: white;
+    
+}
+
 @media screen and (max-width: 768px) {
     .carousel-slides img {
         height: auto;
