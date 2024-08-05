@@ -172,7 +172,6 @@ main {
     font-size: large;
 }
 
-
 .carousel-container {
     max-width: 1200px;
     width: 100%;
@@ -760,4 +759,46 @@ h2 {
     
     }
     
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .apresentacao > img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .apresentacao .texto {
+        max-width: 100%;
+    }
+
+    .apresentacao h1 {
+        font-size: 35px;
+    }
+
+    .apresentacao h2 {
+        font-size: 25px;
+    }
+
+    .apresentacao p {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 480px) {
+    .apresentacao h1 {
+        font-size: 28px;
+    }
+
+    .apresentacao h2 {
+        font-size: 20px;
+    }
+
+    .apresentacao p {
+        font-size: small;
+    }
 }
