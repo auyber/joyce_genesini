@@ -807,4 +807,14 @@ h2 {
     .apresentacao p {
         font-size: small;
     }
+
+    .carousel-container {
+        max-height: 80vh;
+    }
+
+.carousel {
+    max-height: 380px;
+}
+
+
 }
