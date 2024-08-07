@@ -172,6 +172,14 @@ main {
     font-size: large;
 }
 
+.texto > h2 {
+    color: #756596;
+}
+
+.texto > p {
+    font-weight: bold;
+}
+
 .carousel-container {
     max-width: 1200px;
     width: 100%;
