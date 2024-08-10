@@ -702,6 +702,11 @@ h2 {
     
 }
 
+iframe {
+    width: 50vh;
+    height: 50vh;
+}
+
 @media screen and (max-width: 768px) {
     .carousel-slides img {
         height: auto;
