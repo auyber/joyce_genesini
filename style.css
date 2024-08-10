@@ -48,6 +48,7 @@ header {
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
     text-decoration: none;
+    animation: bounce 2s infinite;
 }
 
 .whatsapp-button:hover {
@@ -304,6 +305,7 @@ h3 {
     filter: blur(20px);
     opacity: 0;
     animation: showContent 0.5s 0.5s linear forwards;
+    
 }
 
 .titulo3 {
@@ -563,11 +565,13 @@ section#img12 {
     border: 2px solid black;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 04rem;
+    margin-bottom: 04rem;
     box-shadow: 05px 05px 10px rgba(0, 0, 0, 0.219);
     transition-duration: 2s;
     max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .servico > h2 {
@@ -712,7 +716,8 @@ h2 {
     }
 
     iframe {
-        width: 50vh;
+        width: 30vh;
+        height: 30vh;
         margin: 2em;
     }
 
@@ -775,6 +780,13 @@ h2 {
     
 }
 
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
 @media (max-width: 768px) {
     .apresentacao {
         flex-direction: column;
@@ -820,9 +832,13 @@ h2 {
         max-height: 80vh;
     }
 
-.carousel {
-    max-height: 380px;
-}
+    .carousel {
+        max-height: 380px;
+    }
 
+    iframe {
+        width: 50vh;
+        height: 50vh;
+    }
 
 }
