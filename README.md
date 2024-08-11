@@ -33,7 +33,7 @@ Site criado para a Nutricionista Joyce Genesini, possuindo várias páginas most
 ## Implementações futuras
 1. Implementar um Blog.
 
-2. Implementar mais páginas com novos serviços oferecidos.
+2. Implementar seção de comentários no Blog.
 
 
 <br/>
