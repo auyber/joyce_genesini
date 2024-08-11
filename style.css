@@ -48,6 +48,7 @@ header {
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
     text-decoration: none;
+    animation: bounce 2s infinite;
 }
 
 .whatsapp-button:hover {
@@ -81,8 +82,8 @@ header {
 }
 
 img.logo {
-    width: 100px;
-    height: 80px;
+    width: 250px;
+    height:100px;
 }
 
 a {
@@ -124,6 +125,142 @@ nav {
 main {
     margin: auto;
 }
+
+
+.apresentacao {
+    max-width: 1200px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta o espaçamento entre a imagem e o texto */
+    margin: auto;
+    padding: 20px; /* Adiciona espaçamento ao redor do contêiner */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    background-image: url(imagens/fundo.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.apresentacao > img {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px; /* Adiciona espaçamento à direita da imagem */
+}
+
+.apresentacao .texto {
+    max-width: calc(100% - 40vh - 40px); /* Ajusta a largura máxima do texto com base no espaço restante */
+    flex: 1;
+}
+
+.apresentacao h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.apresentacao h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #756596d3;
+}
+
+.apresentacao p {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+.texto > h2 {
+    color: #756596;
+}
+
+.texto > p {
+    font-weight: bold;
+}
+
+.carousel-container {
+    max-width: 1200px;
+    width: 100%;
+    height: 80vh; /* Definindo uma altura fixa para o contêiner */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.carousel {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%; /* Garantir que o carrossel ocupe toda a altura do contêiner */
+    align-items: center;
+    margin: auto;
+    overflow: hidden; /* Esconder partes fora da visualização */
+    position: relative;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; 
+    height: 100%; /* Garantir que o contêiner das imagens ocupe toda a altura do carrossel */
+}
+
+.carousel-slides .slide {
+    position: relative;
+    width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.carousel-slides img {
+    width: 100%;
+    height: 100%; /* Ajuste para cobrir toda a altura do slide */
+    object-fit: contain; /* Mantém a proporção e corta a imagem conforme necessário */
+    display: block;
+    margin: auto;
+}
+
+.carousel-slides .caption {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #756596;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* --cor1: #756596;
+    --cor2: #CDCDE0;
+    --cor3: #6A725D;
+    --cor4: #DAF2EA;*/
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
 
 h1 {
     text-align: center;
@@ -168,6 +305,7 @@ h3 {
     filter: blur(20px);
     opacity: 0;
     animation: showContent 0.5s 0.5s linear forwards;
+    
 }
 
 .titulo3 {
@@ -354,27 +492,27 @@ section.imagem > h2 {
 }
 
 section#img01 {
-    background-image: url(../imagens/flor.jpg);
+    background-image: url(imagens/flor.jpg);
     background-position: right center;
 }
 
 section#img02 {
-    background-image: url(../imagens/essencia.jpg);
+    background-image: url(imagens/essencia.jpg);
     background-position: right center;
 }
 
 section#img04 {
-    background-image: url(../imagens/alimentos.jpg);
+    background-image: url(imagens/alimentos.jpg);
     background-position: right center;
 }
 
 section#img05 {
-    background-image: url(../imagens/enteroterapia2.jpg);
+    background-image: url(imagens/enteroterapia2.jpg);
     background-position: right center;
 }
 
 section#img06 {
-    background-image: url(../imagens/enteroterapia3.jpg);
+    background-image: url(imagens/enteroterapia3.jpg);
     background-position: right center;
 }
 
@@ -384,7 +522,27 @@ section#img07 {
 }
 
 section#img08 {
-    background-image: url(../imagens/auriculoterapia4.jpg);
+    background-image: url(imagens/auriculoterapia4.jpg);
+    background-position: center;
+}
+
+section#img09 {
+    background-image: url(imagens/nutricao_online.jpg);
+    background-position: center;
+}
+
+section#img10 {
+    background-image: url(imagens/atendimento.png);
+    background-position: center;
+}
+
+section#img11 {
+    background-image: url(imagens/domicilio.jpg);
+    background-position: center;
+}
+
+section#img12 {
+    background-image: url(imagens/bemestar.jpg);
     background-position: center;
 }
 
@@ -407,11 +565,13 @@ section#img08 {
     border: 2px solid black;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 04rem;
+    margin-bottom: 04rem;
     box-shadow: 05px 05px 10px rgba(0, 0, 0, 0.219);
     transition-duration: 2s;
     max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .servico > h2 {
@@ -462,6 +622,13 @@ h2 {
     max-width: 1400px;
     margin: auto;
     margin-bottom: 100px;
+}
+
+.maps p {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.1em; /* Ajuste o tamanho da fonte conforme necessário */
+    transition: background-color 0.3s ease;
 }
 
 .sobre-joyce .content-wrapper {
@@ -531,13 +698,42 @@ h2 {
     transform: scale(1.6) rotate(25deg);
 }
 
+.nutri {
+    list-style-type: circle;
+    
+}
+
+.nutricao {
+    list-style: disc;
+    color: white;
+    
+}
+
+iframe {
+    width: 50vh;
+    height: 50vh;
+}
+
+.maps:hover {
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 768px) {
+    .carousel-slides img {
+        height: auto;
+    }
+
+    button.prev, button.next {
+        padding: 5px;
+    }
+    
     .section-servicos {
         display: block;
     }
 
     iframe {
-        width: 50vh;
+        width: 30vh;
+        height: 30vh;
         margin: 2em;
     }
 
@@ -598,4 +794,76 @@ h2 {
     
     }
     
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .apresentacao > img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .apresentacao .texto {
+        max-width: 100%;
+    }
+
+    .apresentacao h1 {
+        font-size: 35px;
+    }
+
+    .apresentacao h2 {
+        font-size: 25px;
+    }
+
+    .apresentacao p {
+        font-size: medium;
+    }
+    .centralizado {
+        padding: 10px;
+    }
+
+    .maps p {
+        font-size: 1em; /* Ajuste o tamanho da fonte para telas menores */
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .apresentacao h1 {
+        font-size: 28px;
+    }
+
+    .apresentacao h2 {
+        font-size: 20px;
+    }
+
+    .apresentacao p {
+        font-size: small;
+    }
+
+    .carousel-container {
+        max-height: 80vh;
+    }
+
+    .carousel {
+        max-height: 380px;
+    }
+
+    iframe {
+        width: 50vh;
+        height: 50vh;
+    }
+
 }
