@@ -492,27 +492,27 @@ section.imagem > h2 {
 }
 
 section#img01 {
-    background-image: url(../imagens/flor.jpg);
+    background-image: url(imagens/flor.jpg);
     background-position: right center;
 }
 
 section#img02 {
-    background-image: url(../imagens/essencia.jpg);
+    background-image: url(imagens/essencia.jpg);
     background-position: right center;
 }
 
 section#img04 {
-    background-image: url(../imagens/alimentos.jpg);
+    background-image: url(imagens/alimentos.jpg);
     background-position: right center;
 }
 
 section#img05 {
-    background-image: url(../imagens/enteroterapia2.jpg);
+    background-image: url(imagens/enteroterapia2.jpg);
     background-position: right center;
 }
 
 section#img06 {
-    background-image: url(../imagens/enteroterapia3.jpg);
+    background-image: url(imagens/enteroterapia3.jpg);
     background-position: right center;
 }
 
@@ -522,27 +522,27 @@ section#img07 {
 }
 
 section#img08 {
-    background-image: url(../imagens/auriculoterapia4.jpg);
+    background-image: url(imagens/auriculoterapia4.jpg);
     background-position: center;
 }
 
 section#img09 {
-    background-image: url(../imagens/nutricao_online.jpg);
+    background-image: url(imagens/nutricao_online.jpg);
     background-position: center;
 }
 
 section#img10 {
-    background-image: url(../imagens/atendimento.png);
+    background-image: url(imagens/atendimento.png);
     background-position: center;
 }
 
 section#img11 {
-    background-image: url(../imagens/domicilio.jpg);
+    background-image: url(imagens/domicilio.jpg);
     background-position: center;
 }
 
 section#img12 {
-    background-image: url(../imagens/bemestar.jpg);
+    background-image: url(imagens/bemestar.jpg);
     background-position: center;
 }
 
@@ -622,6 +622,13 @@ h2 {
     max-width: 1400px;
     margin: auto;
     margin-bottom: 100px;
+}
+
+.maps p {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.1em; /* Ajuste o tamanho da fonte conforme necessário */
+    transition: background-color 0.3s ease;
 }
 
 .sobre-joyce .content-wrapper {
@@ -705,6 +712,10 @@ h2 {
 iframe {
     width: 50vh;
     height: 50vh;
+}
+
+.maps:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
@@ -818,6 +829,15 @@ iframe {
     .apresentacao p {
         font-size: medium;
     }
+    .centralizado {
+        padding: 10px;
+    }
+
+    .maps p {
+        font-size: 1em; /* Ajuste o tamanho da fonte para telas menores */
+        padding: 10px;
+    }
+
 }
 
 @media (max-width: 480px) {
