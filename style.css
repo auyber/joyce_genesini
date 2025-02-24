@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root { 
     --cor1: #756596;
     --cor2: #CDCDE0;
@@ -177,9 +179,6 @@ main {
     color: #756596;
 }
 
-.texto > p {
-    font-weight: bold;
-}
 
 .carousel-container {
     max-width: 1200px;
@@ -219,7 +218,7 @@ main {
 .carousel-slides img {
     width: 100%;
     height: 100%; /* Ajuste para cobrir toda a altura do slide */
-    object-fit: contain; /* Mantém a proporção e corta a imagem conforme necessário */
+    object-fit: cover; /* Mantém a proporção e corta a imagem conforme necessário */
     display: block;
     margin: auto;
 }
@@ -261,6 +260,9 @@ button.next {
     right: 10px;
 }
 
+h1, h2, h3 {
+    font-family: "Raleway", serif;
+}
 
 h1 {
     text-align: center;
@@ -273,7 +275,8 @@ h2 {
 }
 
 p {
-    text-align: justify;
+    font-family: "Roboto", serif;
+    text-align: left;
 }
 
 h3 {
@@ -288,8 +291,8 @@ h3 {
 }
 
 .titulo > div {
-    max-width: 1400px;
-    width: 60%;
+    max-width: 1200px;
+    width: 85%;
     margin: auto;
     padding: 20px;
     font-size: 1.8em;
@@ -627,7 +630,7 @@ h2 {
 .maps p {
     margin: 0;
     padding: 15px;
-    font-size: 1.1em; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 1.1em;
     transition: background-color 0.3s ease;
 }
 
@@ -838,6 +841,29 @@ iframe {
         padding: 10px;
     }
 
+    .carousel-container {
+        height: 70vh;
+        max-height: 70vh;
+    }
+
+    .carousel {
+        height: 70vh;
+        max-height: 70vh;
+    }
+
+    .carousel-slides {
+        height: 100%;
+    }
+
+    .carousel-slides .slide {
+        height: 100%;
+    }
+
+    .carousel-slides img {
+        height: 100%;
+        object-fit: cover;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -854,16 +880,34 @@ iframe {
     }
 
     .carousel-container {
-        max-height: 80vh;
+        height: 60vh;
+        max-height: 60vh;
     }
 
     .carousel {
-        max-height: 380px;
+        height: 60vh;
+        max-height: 60vh;
+    }
+
+    .carousel-slides {
+        height: 100%;
+    }
+
+    .carousel-slides .slide {
+        height: 100%;
+    }
+
+    .carousel-slides img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-slides .caption {
+        text-align: center;
     }
 
     iframe {
         width: 50vh;
         height: 50vh;
     }
-
 }
