@@ -172,7 +172,7 @@ main {
 .apresentacao p {
     margin: 0;
     padding: 0;
-    font-size: large;
+    
 }
 
 .texto > h2 {
@@ -277,6 +277,7 @@ h2 {
 p {
     font-family: "Roboto", serif;
     text-align: left;
+    font-size: 20px;
 }
 
 h3 {
@@ -299,9 +300,11 @@ h3 {
     line-height: 1.8em;
 }
 
-.titulo2 > p {
+.titulo2 > p, ul {
     color: white;
+    font-size: 18px;
 }
+
 
 .titulo2 {
     transform: translateY(50px);
@@ -550,40 +553,27 @@ section#img12 {
 }
 
 .section-servicos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2%;
-    margin-bottom: 2rem;
-    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
     margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    transition-duration: 2s;
+    padding: 0 15px;
 }
 
 .servico {
-    flex: 1 1 calc(33.333% - 2%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo do card no topo */
+    align-items: stretch; /* Ocupa toda a largura do card */
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 04rem;
-    margin-bottom: 04rem;
-    box-shadow: 05px 05px 10px rgba(0, 0, 0, 0.219);
-    transition-duration: 2s;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.servico > h2 {
-    text-align: center;
-}
-
-.servico > p {
-    padding: 50px;
-    line-height: 1.5em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+    transition: transform 0.3s ease-in-out;
+    height: 95%;
+    margin-bottom: 20px;
 }
 
 .servico img {
@@ -592,9 +582,31 @@ section#img12 {
     object-fit: cover;
 }
 
-.servico > p,
-h2 {
-    margin: 10px;
+.servico > h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.servico > p {
+    text-align: left;
+    padding: 0 10px;
+    margin: 10px 0;
+    line-height: 1.5em;
+    flex-grow: 1; /* Faz com que o texto ocupe o espaço restante e empurre o botão para baixo */
+}
+
+.servico .btn-saiba-mais {
+    display: block;
+    text-align: center;
+    background-color: #756596;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 80%;
+    margin-top: auto; /* Empurra o botão para o final */
 }
 
 .servico:hover {
