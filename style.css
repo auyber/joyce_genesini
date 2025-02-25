@@ -1002,7 +1002,7 @@ iframe {
     }
 
     .blog-content {
-        width: 100%; 
+        width: 90%; 
     }
 
     .blog-content > h1 {
@@ -1084,7 +1084,6 @@ iframe {
 
     .blog-post {
         margin: 10px auto;
-        padding: 05px;
         width: 80%;
     }
 
