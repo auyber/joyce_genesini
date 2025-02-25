@@ -230,12 +230,15 @@ main {
     bottom: 0%;
     left: 50%;
     transform: translate(-50%);
-    background-color: #756596;
+    background-color: rgba(117, 101, 150, 0.8); /* Pode adicionar opacidade */
     color: white;
     padding: 10px;
     font-size: 1.2em;
     border-radius: 5px;
+    z-index: 3; /* Garante que o link da legenda ficará acima dos outros elementos */
+    text-align: center;
 }
+
 
 button.prev, button.next {
     position: absolute;
