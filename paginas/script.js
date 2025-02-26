@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Atualiza automaticamente a versão do CSS para evitar cache
+    const link = document.querySelector("link[rel='stylesheet']");
+    if (link) {
+        const url = new URL(link.href);
+        url.searchParams.set("v", Date.now()); // Adiciona um timestamp
+        link.href = url.toString();
+    }
+
+    // Carrossel de imagens
     const slides = document.querySelectorAll('.carousel-slides img');
     const totalSlides = slides.length;
     let slideIndex = 0;
@@ -27,13 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.prev').addEventListener('click', showPrevSlide);
 
     setInterval(showNextSlide, intervalTime);
-});
 
-
-document.getElementById('formulario-comentario').addEventListener('submit', function(event) {
-    event.preventDefault();
-    var comentario = document.getElementById('comentario').value;
-    var novoComentario = document.createElement('p');
-    novoComentario.textContent = comentario;
-    document.getElementById('comentarios-anteriores').appendChild(novoComentario);
+    // Adicionando comentários ao formulário
+    document.getElementById('formulario-comentario').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var comentario = document.getElementById('comentario').value;
+        var novoComentario = document.createElement('p');
+        novoComentario.textContent = comentario;
+        document.getElementById('comentarios-anteriores').appendChild(novoComentario);
+    });
 });
