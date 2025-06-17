@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root { 
     --cor1: #756596;
     --cor2: #CDCDE0;
@@ -11,11 +13,12 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', serif;
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden; /* Evita overflow horizontal */
+    background-color: #fbfff48f;
 }
 
 
@@ -30,7 +33,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
 }
 
 .whatsapp-button {
@@ -78,7 +80,6 @@ header {
 .menu {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
 }
 
 img.logo {
@@ -158,7 +159,7 @@ main {
 .apresentacao h1 {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .apresentacao h2 {
@@ -170,76 +171,74 @@ main {
 .apresentacao p {
     margin: 0;
     padding: 0;
-    font-size: large;
+    
 }
 
 .texto > h2 {
     color: #756596;
 }
 
-.texto > p {
-    font-weight: bold;
-}
 
 .carousel-container {
     max-width: 1200px;
     width: 100%;
-    height: 80vh; /* Definindo uma altura fixa para o contêiner */
+    height: 80vh;
     overflow: hidden;
     display: flex;
     align-items: center;
     margin: auto;
     position: relative;
+    border-radius: 20px; /* Bordas arredondadas no contêiner */
 }
 
 .carousel {
     max-width: 1200px;
     width: 100%;
-    height: 100%; /* Garantir que o carrossel ocupe toda a altura do contêiner */
+    height: 100%;
     align-items: center;
     margin: auto;
-    overflow: hidden; /* Esconder partes fora da visualização */
+    overflow: hidden;
     position: relative;
+    border-radius: 20px; /* Mantém o efeito arredondado */
 }
 
 .carousel-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%; 
-    height: 100%; /* Garantir que o contêiner das imagens ocupe toda a altura do carrossel */
+    height: 100%;
 }
 
 .carousel-slides .slide {
     position: relative;
-    width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    width: 100%;
     flex-shrink: 0;
     height: 100%;
 }
 
 .carousel-slides img {
     width: 100%;
-    height: 100%; /* Ajuste para cobrir toda a altura do slide */
-    object-fit: contain; /* Mantém a proporção e corta a imagem conforme necessário */
+    height: 100%;
+    object-fit: cover;
     display: block;
     margin: auto;
 }
+
 
 .carousel-slides .caption {
     position: absolute;
     bottom: 0%;
     left: 50%;
     transform: translate(-50%);
-    background-color: #756596;
+    background-color: rgba(117, 101, 150, 0.8); /* Pode adicionar opacidade */
     color: white;
     padding: 10px;
     font-size: 1.2em;
     border-radius: 5px;
+    z-index: 3; /* Garante que o link da legenda ficará acima dos outros elementos */
+    text-align: center;
 }
 
-/* --cor1: #756596;
-    --cor2: #CDCDE0;
-    --cor3: #6A725D;
-    --cor4: #DAF2EA;*/
 
 button.prev, button.next {
     position: absolute;
@@ -261,7 +260,6 @@ button.next {
     right: 10px;
 }
 
-
 h1 {
     text-align: center;
     color: #756596;
@@ -273,7 +271,10 @@ h2 {
 }
 
 p {
-    text-align: justify;
+    font-family: "Roboto", serif;
+    text-align: left;
+    font-size: 20px;
+    color: black;
 }
 
 h3 {
@@ -288,8 +289,8 @@ h3 {
 }
 
 .titulo > div {
-    max-width: 1400px;
-    width: 60%;
+    max-width: 1200px;
+    width: 85%;
     margin: auto;
     padding: 20px;
     font-size: 1.8em;
@@ -298,7 +299,17 @@ h3 {
 
 .titulo2 > p {
     color: white;
+    font-size: 18px;
+    max-width: 1000px;
+    margin: auto;
 }
+
+.titulo2 > ul {
+    font-size: 18px;
+    max-width: 1000px;
+    margin: auto;
+}
+
 
 .titulo2 {
     transform: translateY(50px);
@@ -392,6 +403,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: 18px;
 }
 
 footer > a:hover {
@@ -413,9 +425,17 @@ footer > a {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    max-width: 1400px;
+    max-width: 1000px;
     line-height: 2em;
     width: 80%;
+}
+
+.especialidades li {
+    font-size: 20px;
+}
+
+.sub {
+    text-align: left;
 }
 
 section.imag {
@@ -547,19 +567,81 @@ section#img12 {
 }
 
 .section-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo do card no topo */
+    align-items: stretch; /* Ocupa toda a largura do card */
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+    transition: transform 0.3s ease-in-out;
+    height: 97%;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.servico img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.servico > h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.servico > p {
+    text-align: left;
+    padding: 0 10px;
+    margin: 10px 0;
+    line-height: 1.5em;
+    flex-grow: 1; /* Faz com que o texto ocupe o espaço restante e empurre o botão para baixo */
+}
+
+.servico .btn-saiba-mais {
+    display: block;
+    text-align: center;
+    background-color: #756596;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 80%;
+    margin-top: auto; /* Empurra o botão para o final */
+}
+
+.servico:hover {
+    transform: scale(1.05);
+}
+
+.section-servicos2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2%;
     margin-bottom: 2rem;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
     transition-duration: 2s;
 }
 
-.servico {
+.servico2 {
     flex: 1 1 calc(33.333% - 2%);
     box-sizing: border-box;
     border: 2px solid black;
@@ -574,28 +656,38 @@ section#img12 {
     margin-right: auto;
 }
 
-.servico > h2 {
+.servico2 > h2 {
     text-align: center;
+    font-size: 24px;
 }
 
-.servico > p {
+.servico2 > p {
     padding: 50px;
     line-height: 1.5em;
 }
 
-.servico img {
+.servico2 img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-.servico > p,
+.servico2 > p,
 h2 {
     margin: 10px;
 }
 
-.servico:hover {
+.servico2:hover {
     transform: scale(1.05);
+}
+
+.blog-post {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.blog-image img {
+    object-fit: cover;
 }
 
 .blog {
@@ -627,7 +719,7 @@ h2 {
 .maps p {
     margin: 0;
     padding: 15px;
-    font-size: 1.1em; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 1.1em;
     transition: background-color 0.3s ease;
 }
 
@@ -647,7 +739,11 @@ h2 {
     position: relative;
     top: 25px;
     right: 0;
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+    overflow: hidden;
+ 
 }
+
 
 .sobre-joyce .slider img {
     width: 100%;
@@ -660,7 +756,8 @@ h2 {
     margin: auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    font-family: "Dancing Script", cursive;
+    font-family: "Dancing Script", serif;
+    width: 80%;
 }
 
 .s-m {
@@ -698,6 +795,7 @@ h2 {
     transform: scale(1.6) rotate(25deg);
 }
 
+
 .nutri {
     list-style-type: circle;
     
@@ -716,6 +814,37 @@ iframe {
 
 .maps:hover {
     transform: scale(1.1);
+}
+
+
+.artigo {
+    max-width: 1200px;
+}
+
+.artigo h1 {
+    margin: auto;
+    padding: 20px;
+}
+
+.artigo h2 {
+    margin: 0;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action a {
+    margin-left: 10px;
+    text-align: center;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
 }
 
 @media screen and (max-width: 768px) {
@@ -754,20 +883,19 @@ iframe {
     }
 
     .menu {
-        flex-direction: column;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.1rem;
         padding: 0;
     }
 
     nav {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 0.1rem;
     }
 
-    .logo {
-        margin-bottom: 1rem;
+    nav a {
+        font-size: 12px;
     }
 
     .sobre-joyce .content-wrapper {
@@ -793,17 +921,7 @@ iframe {
         text-align: center;
     
     }
-    
-}
-
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-10px);}
-    60% {transform: translateY(-5px);}
-}
-
-@media (max-width: 768px) {
+           
     .apresentacao {
         flex-direction: column;
         height: auto;
@@ -838,7 +956,72 @@ iframe {
         padding: 10px;
     }
 
-}
+    .carousel-container {
+        height: 70vh;
+        max-height: 70vh;
+    }
+
+    .carousel {
+        height: 70vh;
+        max-height: 70vh;
+    }
+
+    .carousel-slides {
+        height: 100%;
+    }
+
+    .carousel-slides .slide {
+        height: 100%;
+    }
+
+    .carousel-slides img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .blog-post {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    .blog-image {
+        margin-right: 0; 
+        margin-bottom: 20px;
+        width: 100%;
+        height: 40vh; 
+        overflow: hidden; 
+    }
+
+    .blog-image img {
+        width: 100%; 
+        height: 40vh; 
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .blog-content {
+        width: 90%; 
+    }
+
+    .blog-content > h1 {
+        font-size: 1.5em;
+        text-align: left; 
+    }
+
+    .blog-content > p {
+        font-size: 1.2rem; 
+        text-align: left;
+    }
+
+
+@media (min-width: 481px) and (max-width: 700px) {
+        .servico2 {
+            flex: 1 1 calc(50% - 2%); 
+            max-width: none; 
+        }
+    }
 
 @media (max-width: 480px) {
     .apresentacao h1 {
@@ -854,16 +1037,54 @@ iframe {
     }
 
     .carousel-container {
-        max-height: 80vh;
+        height: 60vh;
+        max-height: 60vh;
     }
 
     .carousel {
-        max-height: 380px;
+        height: 60vh;
+        max-height: 60vh;
+    }
+
+    .carousel-slides {
+        height: 100%;
+    }
+
+    .carousel-slides .slide {
+        height: 100%;
+    }
+
+    .carousel-slides img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-slides .caption {
+        text-align: center;
     }
 
     iframe {
         width: 50vh;
         height: 50vh;
+    }
+
+    .frase h2 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 10;
+    }
+
+    .servico2 {
+        flex: 1 1 100%; /* 1 card por linha */
+        max-width: none; /* Remove o limite de largura */
+    }
+
+    .blog-post {
+        margin: 10px auto;
+        width: 80%;
     }
 
 }

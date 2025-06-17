@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página inicial (Atualizada hoje) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/</loc>
+    <lastmod>2025-02-25</lastmod> <!-- Data de hoje -->
+    <changefreq>daily</changefreq> <!-- Atualizada frequentemente -->
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Página sobre (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/sobre</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Página especialidades (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/especialidades</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Página blog (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/blog</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Página contato (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/contato</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Página nutrição (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/nutricao</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Página nutrição online (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/nutricaoonline</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Página nutrição domiciliar (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/nutricaodomiciliar</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Página floral (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/floral</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Página auriculoterapia (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/auriculoterapia</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Página enteroterapia (Atualizada semanalmente) -->
+  <url>
+    <loc>https://joycegenesininutri.com.br/paginas/enteroterapia</loc>
+    <lastmod>2025-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,23 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# Remove o .html das URLs (mas permite acesso a arquivos físicos .html)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# Redireciona /index e /index.html para apenas /
+RewriteCond %{THE_REQUEST} /index(?:\.html)? [NC]
+RewriteRule ^index(?:\.html)?$ / [R=301,L]
+
+# Garante que o site funcione sem precisar de /index
+DirectoryIndex index.html
+
+# Redireciona URLs duplicadas (exemplo: /especialidades/especialidades)
+RewriteCond %{THE_REQUEST} /(.+)/\1 [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Corrige URLs com barra extra no final (opcional)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.+)$ /$1/ [R=301,L]
